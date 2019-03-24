@@ -1,4 +1,6 @@
-/*Ссылка на шрифты кроме основного 'https://fonts.googleapis.com/css?family=Farsan|Hind+Siliguri|Racing+Sans+One|Six+Caps|Space+Mono:700'*/
+@import url('https://fonts.googleapis.com/css?family=Farsan|Hind+Siliguri|Racing+Sans+One|Six+Caps|Space+Mono:700');
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+English+SC');
+
 body
 {
     width: 1200px;
@@ -22,11 +24,11 @@ body
 .header__info
 {
     float: left;
-
+    text-align: center;
     box-sizing: border-box;
     width: 200px;
     padding: 25px 10px;
-
+    font-size: medium;
     border: 1px solid;
 }
 
@@ -40,18 +42,27 @@ body
 .header__weather-title
 {
     margin: 0;
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+    font-size: 100%; /* в сноске размер указан 117% но показалось что размер 100% больше соответствует макету*/
+    text-align: center;
 }
 
 .header__weather-text
 {
     margin: 0;
+    font-size: 80%;
+    text-align: justify;
+    line-height: 110%;
 }
 
 .header__title
 {
     overflow: visible;
-
+    font-family: 'IM Fell English SC', serif;
+    font-size: 5em;
     margin: 0;
+    text-align: center;
 }
 
 
@@ -67,7 +78,7 @@ body
 .sub-header__copyright
 {
     display: inline-block;
-
+    font-size: 60%;
     margin: 0 30px;
 }
 
@@ -88,6 +99,21 @@ body
 {
     margin-top: 0;
     margin-bottom: 10px;
+    font-family: 'Six Caps', sans-serif;
+    font-weight: bold;
+    font-size: 320%;
+}
+
+.article__title_font_racing
+{
+    font-family: 'Racing Sans One', cursive;
+    font-size: 200%;
+}
+
+.article__title_font_farsan
+{
+    font-family: Farsan, cursive;
+    font-size: 230%;    
 }
 
 .article__help
@@ -101,18 +127,29 @@ body
 {
     margin-top: 10px;
     margin-bottom: 4px;
+    font-size: 80%;
+    text-align: justify;
+    text-indent: 2ch;
+    font-style: italic;
 }
 
 .article__author
 {
     display: block;
-
+    font-weight: bold;
+    font-size: 80%;
+    text-align: center;
     margin-top: 10px;
+    column-span: all;
 }
 
 .article__continue
 {
     display: block;
+    font-size: 80%;
+    text-align: center;
+    font-style: italic;
+    column-span: all;
 }
 
 .article__image
@@ -131,8 +168,33 @@ body
 .article__subtitle
 {
     margin: 10px 0;
+    font-family: 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 117%;
+    text-align: center;
 }
 
+.article__image-caption
+{
+    font-size: 0.8rem;
+    text-decoration: underline;
+}
+
+.article_columns_two .article__content
+{
+    column-count: 2;
+    -moz-column-count: 2; /* Для Firefox */
+	column-gap: 15px;
+}
+
+.article__content p
+{
+    margin-bottom: 0;
+    margin-top: 0.3em;
+    font-size: 80%;
+    text-align: justify;
+    text-indent: 2ch;
+}
 /*––––––––––––––––––Блок главной фотографии–––––––––*/
 .main-photo__wrapper
 {
@@ -147,11 +209,21 @@ body
 .main-photo__title
 {
     margin: 0;
+    font-size: 1.2em; /* на макете сноски не было про размер и толщину, но было явное несоответствие*/
+    font-weight: bold;
 }
 
 .main-photo__desc
 {
     margin-bottom: 20px;
+    font-size: 80%;
+}
+
+.main-photo__caption
+{
+    font-size: 0.7rem;
+    text-align: right;
+    text-transform: uppercase;
 }
 
 /*––––––––––––––––––Линия разделения––––––––––––––––*/
